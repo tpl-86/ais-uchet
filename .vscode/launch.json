@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "АИС Учет: Основное приложение",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/ais_uchet/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            }
+        },
+        {
+            "name": "Python: Текущий файл",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Тесты",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["-v", "tests"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
