@@ -1,1 +1,45 @@
-.venv
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Project specific
+data/database/*.db
+data/database/*.db-journal
+data/backups/*
+!data/backups/.gitkeep
+data/logs/*.log
+!data/logs/.gitkeep
+.env
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
